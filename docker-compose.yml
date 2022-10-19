@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  db:
+    container_name: db
+    image: postgres:12-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: main
+  qa-auto-task:
+    container_name: qa-qauto-task
+    image: telega83/qa-auto-task:latest
+    ports:
+      - "80:80"
+    depends_on:
+      - db
