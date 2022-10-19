@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "code": {
+      "const": 400
+    },
+    "reason": {
+      "const": "Bad Request"
+    },
+    "errors": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "field": {
+              "const": "price"
+            },
+            "messages": {
+              "type": "array",
+              "items": [
+                {
+                  "const": "Value must be positive"
+                }
+              ]
+            }
+          },
+          "required": [
+            "field",
+            "messages"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "code",
+    "reason",
+    "errors"
+  ]
+}

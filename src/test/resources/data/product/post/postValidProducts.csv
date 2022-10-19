@@ -1,0 +1,10 @@
+#id
+user,-1,ValidName,ValidDescription,0.5,schemes/product/post/valid_product.json
+admin,0,ValidName,ValidDescription,0.5,schemes/product/post/valid_product.json
+user,42,ValidName,ValidDescription,0.5,schemes/product/post/valid_product.json
+#name
+admin,43,abc,ValidDescription,0.5,schemes/product/post/valid_product.json
+user,44,abcdefghijklmnoP0!@_,ValidDescription,0.5,schemes/product/post/valid_product.json
+#description
+admin,45,ValidName,abc,0.5,schemes/product/post/valid_product.json
+user,46,ValidName,abcdefghijklmnoP0!@_,0.5,schemes/product/post/valid_product.json

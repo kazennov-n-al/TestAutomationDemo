@@ -1,0 +1,11 @@
+#Username length
+abc,ValPassw1!,test@email1.com,FirstName,LastName,user
+01234567890123456789,ValPassw1!,test@email2.com,FirstName,LastName,user
+#FistName length
+Username1,ValPassw1!,test@email3.com,Al,LastName,user
+Username2,ValPassw1!,test@email4.com,01234567890123456789012345678901234567890123456789,LastName,user
+#lastName length
+Username3,ValPassw1!,test@email5.com,FirstName,Fo,user
+Username4,ValPassw1!,test@email6.com,FirstName,01234567890123456789012345678901234567890123456789,user
+#admin role
+AnotherAdmin,ValPassw1!,test@email7.com,FirstName,LastName,admin

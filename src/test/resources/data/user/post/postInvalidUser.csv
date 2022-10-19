@@ -1,0 +1,12 @@
+#Username length
+ab,ValPassw1!,test@email1.com,FirstName,LastName,user,username,Length must be between 3 and 20 characters.
+012345678901234567890,ValPassw1!,test@email2.com,FirstName,LastName,user,username,Length must be between 3 and 20 characters.
+#FistName length NOTE! Message and the implementation are mismatched. Should the message be "Length must be between 2 and 50 characters."?
+Username10,ValPassw1!,test@email3.com,A,LastName,user,firstName,Length must be between 1 and 50 characters.
+Username11,ValPassw1!,test@email4.com,012345678901234567890123456789012345678901234567890,LastName,user,firstName,Length must be between 1 and 50 characters.
+#lastName length
+Username12,ValPassw1!,test@email5.com,FirstName,F,user,lastName,Length must be between 1 and 50 characters.
+Username13,ValPassw1!,test@email6.com,FirstName,012345678901234567890123456789012345678901234567890,user,lastName,Length must be between 1 and 50 characters.
+#invalid role
+Username14,ValPassw1!,test@email7.com,FirstName,LastName,admi,role,Accepted values are 'admin' or 'user'
+Username15,ValPassw1!,test@email7.com,FirstName,LastName,use,role,Accepted values are 'admin' or 'user'

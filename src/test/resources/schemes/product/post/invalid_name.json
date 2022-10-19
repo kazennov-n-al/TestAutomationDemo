@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "code": {
+      "const": 400
+    },
+    "reason": {
+      "const": "Bad Request"
+    },
+    "errors": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "field": {
+              "const": "name"
+            },
+            "messages": {
+              "type": "array",
+              "items": [
+                {
+                  "const": "Length must be between 3 and 20 characters."
+                }
+              ]
+            }
+          },
+          "required": [
+            "field",
+            "messages"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "code",
+    "reason",
+    "errors"
+  ]
+}

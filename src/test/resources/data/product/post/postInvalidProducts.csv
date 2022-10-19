@@ -1,0 +1,12 @@
+#name: too short, too long, null
+admin,1,01,ValidDescription,0.5,schemes/product/post/invalid_name.json
+user,1,012345678901234567890,Productdescription,0.5,schemes/product/post/invalid_name.json
+admin,1,,ValidDescription,0.5,schemes/product/post/invalid_name.json
+#description: too long, too short, null
+user,1,ValidName,10,0.5,schemes/product/post/invalid_description.json
+admin,1,ValidName,987654321098765432109,0.5,schemes/product/post/invalid_description.json
+user,1,ValidName,,0.5,schemes/product/post/invalid_description.json
+#value: negative, zero, null
+admin,1,ValidName,ValidDescription,-1.0,schemes/product/post/negative_value.json
+user,1,ValidName,ValidDescription,0,schemes/product/post/negative_value.json
+admin,1,ValidName,ValidDescription,,schemes/product/post/negative_value.json
